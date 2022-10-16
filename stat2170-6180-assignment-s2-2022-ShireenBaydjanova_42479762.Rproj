@@ -1,0 +1,8 @@
+#Question 1
+  #a)
+mice = read.table("mice_pot.txt", header = TRUE)
+summary(mice)
+
+boxplot(percent_of_act ~ group, data = mice)
+#the group 3 shows very different mean and maximum from three other groups.
+#another interesting feature is that the untreated mice (group VEH) shows similar distribution to groups 0.3 and 1
